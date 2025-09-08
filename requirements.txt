@@ -1,0 +1,43 @@
+# CAD文件翻译处理系统 - Python依赖库
+# CAD File Translation Processing System - Python Dependencies
+
+# 核心依赖库 (Core Dependencies)
+ezdxf>=1.0.0              # DXF文件读写库
+pandas>=1.5.0             # 数据处理和Excel操作
+openpyxl>=3.0.0           # Excel文件读写支持
+
+# DWG转换库 (DWG Conversion Libraries)
+# 注意：aspose-cad 在 Python 3.13+ 版本中暂不支持
+# aspose-cad>=23.0.0      # Aspose.CAD for Python - 完整的CAD文件处理库 (Python < 3.13)
+
+# 替代方案 (如果aspose-cad无法安装):
+# 1. 使用 ODA File Converter (外部工具)
+# 2. 使用 FreeCAD Python API
+# 3. 降级到 Python 3.12 或更低版本
+
+# 开源地理信息库 (备选) - Open Source GIS Library (Alternative)
+# gdal>=3.4.0             # GDAL/OGR - 主要用于地理数据，有限的DWG支持
+
+# 系统依赖库 (System Dependencies)
+pathlib2
+customtkinter>=2.3.0          # 路径处理库 (Python < 3.4 需要)
+
+# 可选依赖库 (Optional Dependencies)
+# matplotlib>=3.5.0       # 图形显示和调试 (可选)
+# numpy>=1.21.0           # 数值计算支持 (可选)
+
+# 开发和调试工具 (Development and Debugging Tools)
+# pytest>=7.0.0          # 单元测试框架
+# black>=22.0.0           # 代码格式化工具
+# flake8>=4.0.0           # 代码质量检查
+
+# 注意事项 (Notes):
+# 1. aspose-cad 是商业库，有免费试用限制
+# 2. 如果使用ODA File Converter，不需要安装aspose-cad
+# 3. 建议使用Python 3.11或更高版本
+# 4. Windows用户可能需要安装Microsoft Visual C++ Redistributable
+
+# 安装命令 (Installation Commands):
+# pip install -r requirements.txt
+# 或者只安装核心依赖: pip install ezdxf pandas openpyxl
+# 然后根据需要选择DWG转换方案
